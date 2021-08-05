@@ -1,0 +1,36 @@
+{
+  "name": "Calender App",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Calender",
+  "icons": {
+    "512": "logo512.png"
+  },
+  "browser_action": {
+    "default_icon": "logo512.png",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+Y"
+      }
+    }
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com https://www.google-analytics.com https://img.icons8.com; object-src 'self'",
+  "permissions": ["identity"],
+  "oauth2": {
+    "client_id": "61616595619-l8f635ur142qki5ndkpt1jb1dgbf4345.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw+O2oLAzyB9pG3Te884Cn8MCSj/WX0Bp5f6t4bZ/Ofc81jps7KlvlcmrwZpVIA6KEV3Zw/2ivcmhXxLk+E5UXjdTzjVWaQpmNS1e8VxghP/39DzwPNH2tgQFgPn8+DpNvM1jyhHvU9uuiPFg3KiVEP9ymAPhQtUQSmvAvLPX2oRprmF82qVdWFmCCRmDoSy996bKnragRY+pQFssReVJMo1fRjn6VFKP2Np6rhOQZ1o8foNr3q+qbMg/tzaKAy4jdr8EaRQuM7UjsJRUnjMy6rPcb8uLgX2s9sX9OXZM4FmbB9F8cwU7kPaPR9AyxRGAOjydBU8EMkfLRYN9lYNKrQIDAQAB"
+}
